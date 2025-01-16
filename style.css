@@ -18,7 +18,7 @@
   background-color: #00989e;
 }
 
-.box.large {
+.box-large {
   grid-column: span 3;
   height: 400px;
   background-color: #00989e;
@@ -187,3 +187,4 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+
