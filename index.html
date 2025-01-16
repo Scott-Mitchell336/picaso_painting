@@ -51,19 +51,13 @@
       <div class="small-thin-box"></div>
     </div>
     <div class="form-container">
-      <form id="contact-form">
+      <form action="thankyou.html" method="get">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-        <button type="submit">Submit</button>
+        <button type="submit" formtarget="_blank">Submit</button>
       </form>
     </div>
-    <script>
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the form from submitting
-        window.location.href = 'thankyou.html'; // Redirect to another page
-      });
-    </script>
   </body>
 </html>

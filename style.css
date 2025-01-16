@@ -187,7 +187,3 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-
-button:hover {
-  background-color: #007a7a;
-}
