@@ -1,0 +1,156 @@
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 15px;
+  /* width: 80; */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.box {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00989e;
+}
+
+.box.large {
+  grid-column: span 3;
+  height: 400px;
+  background-color: #00989e;
+  position: relative;
+}
+
+.small-thin-box {
+  grid-column: span 3;
+  height: 20px;
+  background-color: #cae165;
+}
+
+.person-stencil-image {
+  height: 80px;
+  width: 56px;
+  background-color: #00989e;
+  display: imline-block;
+  z-index: 1;
+}
+
+.person-image-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+}
+
+.green-triangle-image-container{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    height: 450px;
+    z-index: 0;
+
+}
+
+.green-triangle-image{
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    height: 450px;
+    width:300px
+    z-index: 0;
+}
+
+.yellow-triangle-image{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    height: 250px;
+    width: 250px;
+    z-index: 1;
+}
+
+  .floating-grid {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    z-index: 10; 
+  }
+  
+  .circle-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px;
+    width: 460px;
+    height: 320px;
+    grid-template-areas: 
+                "circle1 circle2 . circle3" 
+                "circle4 . circle5 ."
+                ". circle6 . .";
+  }
+  
+  .small-pink-circle {
+    width: 50px;
+    height: 50px; 
+    background-color: #FF8888;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+
+  .small-yellow-circle {
+    width: 50px;
+    height: 50px; 
+    background-color: #FFDE5A;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+
+  .large-pink-circle {
+    width: 100px;
+    height: 100px; 
+    background-color: #FF8888;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+
+  .large-yellow-circle {
+    width: 100px;
+    height: 100px; 
+    background-color: #FFDE5A;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 25px;
+    /* padding-top: 20px; */
+  }
+
+  #circle-1 {
+    grid-area: circle1;
+}
+
+#circle-2 {
+    grid-area: circle2;
+}
+
+#circle-3 {
+    grid-area: circle3;
+}
+
+#circle-4 {
+    grid-area: circle4;
+}
+
+#circle-5 {
+    grid-area: circle5;
+}
+
+#circle-6 {
+    grid-area: circle6;
+}
